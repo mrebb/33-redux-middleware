@@ -1,31 +1,22 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 33: Budget Tracker
 ======
 
-## Submission Instructions
-  * Work in a fork of this repository
-  * Work in a branch on your fork
-  * Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-duncan`
-  * Submit a pull request to this repository
-  * Submit a link to your pull request on canvas
-  * Submit a question, observation, and how long you spent on canvas 
+## Documentation
+  * This is a budget tracker application that lets you create different categories having name, budget and expenses linked under each category using React & Redux middleware. 
 
-## Learning Objectives
-* students will be able to create and implement custom middleware for redux
+#### Validations
 
-## Requirements
-#### Configuration  
-* Up to you, but should follow industry norms.
- 
-#### Feature Tasks
-* complete all remaining lab 31 and 32 feature tasks
-* add a `logger` middleware to your application's redux store
-* add validation to your redux reducers
+* Prevents an item from being added or updated if it's over budget.
+* Prevents a budget from being created or updated with zero or less dollars.
+* Prevents a budget or item from being created or updated without a name.
+* Prevents an expense item from being created if all expense items together go over maximum budget alloted for category
 
-Decide what validation you want to add to your reducers. Ideas might include:
-
-* Prevent an item from being added if it's over budget.
-* Prevent a budget from being created with zero or less dollars.
-* Prevent a budget or item from being created without a name.
+## Technologies
+* JavaScript
+* Nodejs
+* React
+* Redux
+* Sass(css)
 
 ## Example Validation Middleware
 Here's an example validating middleware for an application that implements a
