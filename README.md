@@ -9,6 +9,7 @@
 * Prevents an item from being added or updated if it's over budget.
 * Prevents a budget from being created or updated with zero or less dollars.
 * Prevents a budget or item from being created or updated without a name.
+* Prevents an expense item from being created if all expense items together go over maximum budget alloted for category
 
 ## Technologies
 * JavaScript

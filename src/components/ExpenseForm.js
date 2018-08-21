@@ -9,7 +9,6 @@ class ExpenseForm extends Component {
     categoryID: (this.props.category&&this.props.category.id) || this.props.expense.categoryID,
     name: '',
     price:'',
-    isEditing: false
     };
     const initialState = this.props.expense || this.defaultState;
     this.state =  {...initialState};
@@ -17,7 +16,6 @@ class ExpenseForm extends Component {
   
   onSubmit = event => {
     event.preventDefault();
-    this.setState({isEditing:false});
     this.props.onComplete(this.state);
     this.setState({ ...this.defaultState });
     if(this.props.onUpdate){
@@ -26,7 +24,6 @@ class ExpenseForm extends Component {
   };
 
   onChange = event => {
-    this.setState({isEditing:true});
     const val =
       event.target.type === "checkbox"
         ? event.target.checked
